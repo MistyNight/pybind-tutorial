@@ -14,7 +14,6 @@ PLAT_TO_CMAKE = {
     "win-arm64": "ARM64",
 }
 
-
 # A CMakeExtension needs a sourcedir instead of a file list.
 # The name must be the _single_ output extension from the CMake build.
 # If you need multiple extensions, see scikit-build.
@@ -117,13 +116,13 @@ class CMakeBuild(build_ext):
 # The information here can also be placed in setup.cfg - better separation of
 # logic and declaration, and simpler if you include description/version in a file.
 setup(
-    name="arithmetic",
-    version="0.0.1",
-    author="Dean Moldovan",
-    author_email="dean0x7d@gmail.com",
+    name="pybind_test",
+    version="0.0.2",
+    author="Jisung Yoo",
+    author_email="jisung.lucas.yoo@gmail.com",
     description="A test project using pybind11 and CMake",
     long_description="",
-    ext_modules=[CMakeExtension("arithmetic")],
+    ext_modules=[CMakeExtension("pybind_test")],
     cmdclass={"build_ext": CMakeBuild},
     zip_safe=False,
     extras_require={"test": ["pytest>=6.0"]},

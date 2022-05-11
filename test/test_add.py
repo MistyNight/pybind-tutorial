@@ -1,4 +1,4 @@
-import arithmetic as am
+import pybind_test as pt
 
 if __name__ == '__main__':
-    print('{0} + {1} = {2}'.format(1, 2, am.add(1, 2)))
+    print('{0} + {1} = {2}'.format(1, 2, pt.add(1, 2)))
