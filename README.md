@@ -7,11 +7,13 @@
 - Clone this repository including pybind11.
 ```
 git clone --recursive https://github.com/MistyNight/pybind-tutorial.git
+cd pybind-tutorial
 ```
-- Create a virtual environment.
+- Create a virtual environment and install OpenCV.
 ```
 conda create -n pybind-test
 conda activate pybind-test
+conda install -c conda-forge opencv
 ```
 - Install a pybind test module using setup.py.
 ```
